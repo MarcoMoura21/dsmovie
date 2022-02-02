@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Movie } from 'types/movies';
 import { BASE_URL } from 'utils/requests';
@@ -18,7 +18,10 @@ function FormCard( { movieId  } : Props) {
             .then(response => {
                 setMovie(response.data)
             });
-    }, [movieId])
+    })
+
+    
+    }
    
     return (
 
