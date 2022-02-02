@@ -21,7 +21,7 @@ function FormCard( { movieId  } : Props) {
     })
 
     
-    }
+    
    
     return (
 
